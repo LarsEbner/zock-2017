@@ -1,49 +1,47 @@
-
 public class Primetest {
+	static int threshold = 2000000;
 	
-	
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		
 		
+		primtest(threshold);
+	//	collatz(7);
 		
-		for(int n=2; n<1000; n++){
-			
-			if(isPrime(n)){
-		}
 		
-		System.out.println(n);
-		}		
-
-		System.out.println(n+": "+isPrime(n));
 		
 	}
 	
-
-	private static boolean isPrime(int z ){
 	
-				
-	boolean prim = true;
-	
-	int i = 2;
-	
-		if (z==1) {
-			prim = false;
-	
-		}
-		else{
-			while (i <=z-1 && prim == true) {
-				if (z% i==0)
-					prim = false;
-			
-			else{
-				prim = true;
+	private static boolean prime(int number){
+		
+		boolean isPrime = true;
+		
+		for(int i=2; i<=number/2&&isPrime==true; i++){
+			if(number%i==0){
+				isPrime = false;
 			}
 			
-			i = i+1;
-			
-			}
 		}
-
-		return prim;
-}
-}
+		return isPrime;
+	}
+	
+    public static void primtest(int threshold){
+    	int counter = 0;
+    	System.out.println("Primzahlen von 2 bis "+threshold+":");
+          int number = 2;
+    	  while(number<=threshold){	 	
+    				
+    		  
+    		  
+    			if(prime(number)){
+    				System.out.print(number+" ");
+    				counter++;
+    				if(counter%20==0){System.out.println();}
+    			}
+    		 
+    			number++;
+    			
+    			}
+    		}
+    	
+    }
