@@ -33,7 +33,10 @@ public class Vertex {
 			return new Vertex(v.x+x, v.y+y);
 		}
 		
-		
+		public void addMod(Vertex v){
+			x = v.x+x;
+			y = v.y+y;
+		}
 		
 		
 }	

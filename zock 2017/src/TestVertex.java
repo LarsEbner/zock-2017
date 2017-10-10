@@ -10,9 +10,6 @@ public class TestVertex {
 		System.out.println(v2);
 		
 		v1.addMod(v2);
-		Vertex v3 = v1.add(v2);
-		System.out.println(v1);
-		System.out.println(v2.add(v1));
 		
 		
 		
