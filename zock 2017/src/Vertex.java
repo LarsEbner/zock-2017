@@ -1,4 +1,3 @@
-
 public class Vertex {
 
 	public double x;
@@ -9,13 +8,17 @@ public class Vertex {
 		this.x = x;
 		this.y = y;
 		
-		
-		
 	}
-		
-		public static void main(String[] args) {
 	
-			Vertex v1 = new Vertex(2,2);
-			System.out.println(v1);
-}
-}
+
+		
+		public String toString(){
+			return "("+x+","+y+")";
+		}
+		
+		public double length(){
+			
+			return Math.sqrt(x*x+y*y);
+			
+		}
+}	
