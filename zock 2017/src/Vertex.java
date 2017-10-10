@@ -32,4 +32,8 @@ public class Vertex {
 		public Vertex add(Vertex v){
 			return new Vertex(v.x+x, v.y+y);
 		}
+		
+		
+		
+		
 }	
