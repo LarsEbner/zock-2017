@@ -21,4 +21,8 @@ public class Vertex {
 			return Math.sqrt(x*x+y*y);
 			
 		}
+		public Vertex skalarMult(double s)
+		
+		
+		
 }	
